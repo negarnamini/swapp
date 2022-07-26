@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+h1, input {
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.scrolling-wrapper {
+    overflow-x: auto;
+}
+
+body {
+    background-color: #fff9e5;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.subtitle {
+    font-size: 1.25em;
+    opacity: 0.65;
+}
+
+.card-block {
+    height: 125px;
+    background-color: #fff;
+    border: none;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.2s ease-in-out !important;
+    border-radius: 24px;
+}
+
+.card-block-1 {
+    background-image: url("https://negarnamini.github.io/swapp/images/home/top_1.jpg");
+}
+
+.card-block-2 {
+    background-image: url("https://negarnamini.github.io/swapp/images/home/top_2.jpg");
+}
+
+.card-block-3 {
+    background-image: url("https://negarnamini.github.io/swapp/images/home/top_3.jpg");
+}
+
+.card-block-4 {
+    background-image: url("https://negarnamini.github.io/swapp/images/home/top_4.jpg");
+}
+
+.card-block-5 {
+    background-image: url("https://negarnamini.github.io/swapp/images/home/middle_1.jpg");
+}
+
+.card-block-6 {
+    background-image: url("https://negarnamini.github.io/swapp/images/home/middle_2.jpg");
+}
+
+.card-block-7 {
+    background-image: url("https://negarnamini.github.io/swapp/images/home/middle_3.jpg");
+}
+
+.card-block-8 {
+    background-image: url("https://negarnamini.github.io/swapp/images/home/middle_4.jpg");
+}
+
+.card-block-9 {
+    background-image: url("https://negarnamini.github.io/swapp/images/home/bottom_1.png");
+}
+
+.card-block-10 {
+    background-image: url("https://negarnamini.github.io/swapp/images/home/bottom_2.png");
+}
+
+.card-block-11 {
+    background-image: url("https://negarnamini.github.io/swapp/images/home/bottom_3.png");
+}
+
+p.card-text {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+p.card-subtitle {
+    text-align: center;
+    font-size: 0.75em;
+    font-weight: 10;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+}
+
+/* Expandable search box */
+/* Note: don't change 0.8s in transition. */
+/* --------------------- */
+input.search-text {
+    color: #000;
+    position: relative;
+    z-index: 5;
+    transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+    height: 45px;
+    width: 0;
+    margin: 0;
+    padding: 5px 0 5px 40px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIyMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDIxIDIyIj4KICA8ZWxsaXBzZSBjeD0iOC43OTYiIGN5PSI5LjE3IiBzdHJva2U9IiNGRkUyQjkiIHN0cm9rZS13aWR0aD0iMS41IiByeD0iNy41IiByeT0iNy44NDEiLz4KICA8cGF0aCBzdHJva2U9IiNGRkUyQjkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Im0xNC4yOTUgMTQuOTIgNS4zMDQgNS41NDUiLz4KPC9zdmc+Cg==) no-repeat left 9px center transparent;
+    background-size: 24px;
+}
+
+input.search-text:focus {
+    z-index: 3;
+    width: 250px;
+    border: 1px solid #666;
+    background-color: white;
+    outline: none;
+    cursor: auto;
+    padding-right: 10px;
+}
+
+input.search-submit {
+    position: relative;
+    z-index: 4;
+    top: 17px;
+    left: 49px;
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    background: none;
+}
+
+input.search-text::-webkit-search-cancel-button {
+    cursor: pointer;
+}
+
+.nav>li {
+    padding-left: 14.5px;
+    padding-right: 14.5px;
+}
+
+.stickyBottomNav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
